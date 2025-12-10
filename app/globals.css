@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 76, 81, 154;
+  --background-end-rgb: 59, 64, 128;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      rgb(76, 81, 154),
+      rgb(59, 64, 128)
+    );
+  min-height: 100vh;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus {
+  border-color: rgba(155, 89, 182, 0.8);
+}
